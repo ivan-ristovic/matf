@@ -11,7 +11,7 @@ url: https://ivan-ristovic.github.io
 # be the project name.
 # *** IMPORTANT: If your local "jekyll serve" throws errors change this to '' or
 #     run it like so: jekyll serve --baseurl=''
-baseurl: 'matf'
+baseurl: ''
 
 # Appointments URL
 appointments: https://cloud.ristovic.net/index.php/apps/appointments/pub/YR2YqtUXzVk%3D/form 
