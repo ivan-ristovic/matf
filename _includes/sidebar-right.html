@@ -1,9 +1,15 @@
 <div class="sidebar well">
-    {% include news-list.html %}
+  <h1>Online meeting links</h1>
+  <ul>
+    <li><a href='https://matf.webex.com/meet/ivan_ristovic'>Webex</a></li>
+    {% if site.appointments != '' %}
+    <li class="active"><a href="{{ site.appointments }}">Nextcloud Talk</a></li>
+    {% endif %}
+  </ul>
 </div>
-    
+
 <div class="sidebar well">
-    <h1>Notifications (in Serbian)</h1>
+    <h1>Recent notifications (RS)</h1>
     <ul>
         {% for post in site.posts limit:5 %}
           <li><a href="{{ site.baseurl}}{{ post.url }}">[{{ post.course }}] {{ post.title }}</a></li>
