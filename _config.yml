@@ -15,7 +15,7 @@ baseurl: ''
 parenturl: 'https://web.ristovic.net' # custom field
 
 # Appointments URL
-appointments: https://cloud.ristovic.net/index.php/apps/appointments/pub/YR2YqtUXzVk%3D/form 
+appointments: https://cloud.ristovic.net/apps/appointments/pub/cABBV788qaQQMyGZ/form
 
 # These can be '' to hide the Github or Gitlab nav buttons
 github: 'ivan-ristovic/'
