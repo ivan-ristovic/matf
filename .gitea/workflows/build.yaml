@@ -1,3 +1,11 @@
+name: Build Jekyll site
+on:
+ push:
+   branches: ["main"]
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 jobs:
   jekyll:
     name: Build and deploy Jekyll site
@@ -8,4 +16,16 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Build
-      uses: jerryjvl/jekyll-build-action@v1
+      uses: ${{ vars.ACTIONS_REPO }}
+
+    - name: Deploy
+      uses: burnett01/rsync-deployments@7.1.0
+      with:
+        switches: -avzr --delete
+        path: _site
+        remote_path: ${{ vars.PAGES_PATH_PREFIX }}matf
+        remote_host: ${{ vars.SSH_HOST }}
+        remote_user: ${{ vars.SSH_USER }}
+        remote_key: ${{ secrets.SSH_KEY }}
+        remote_key_pass: ${{ secrets.SSH_KEY_PASS }}
+        
