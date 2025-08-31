@@ -12,7 +12,7 @@ url: https://ivan-ristovic.github.io
 # *** IMPORTANT: If your local "jekyll serve" throws errors change this to '' or
 #     run it like so: jekyll serve --baseurl=''
 baseurl: ''
-parenturl: 'https://web.ristovic.net' # custom field
+parenturl: 'https://ristovic.net' # custom field
 
 # Appointments URL
 appointments: https://cloud.ristovic.net/apps/appointments/pub/cABBV788qaQQMyGZ/form
